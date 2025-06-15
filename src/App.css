@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f8fb;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  background: linear-gradient(to bottom, #e3f2fd 0%, #b3e5fc 100%);
+}
+
+.navbar-logo {
+  color: #1976d2;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.1rem;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+.navbar-links .buy-now {
+  background: linear-gradient(90deg, #1976d2, #26c6da);
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-weight: bold;
+  transition: background 0.2s;
+  border: none;
+}
+
+.navbar-links .buy-now:hover {
+  background: linear-gradient(90deg, #1565c0, #00acc1);
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.1rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.navbar-links .buy-now {
+  background: linear-gradient(90deg, #1976d2, #26c6da);
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-weight: bold;
+  transition: background 0.2s;
+  border: none;
+}
+
+.navbar-links .buy-now:hover {
+  background: linear-gradient(90deg, #1565c0, #00acc1);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to bottom, #e3f2fd 0%, #b3e5fc 100%);
+  text-align: center;
+  padding: 48px 0 80px 0;
+  position: relative;
+}
+
+.hero-image {
+  max-width: 350px;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+
+/* Product Panel */
+.product-panel {
+  background: #f9fafb;
+  border-radius: 18px 18px 0 0;
+  margin: -60px 0 0 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  padding: 32px 0;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* Product Card */
+.product-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 2rem 2.5rem 2rem 2.5rem;
+  width: 380px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.product-image {
+  width: 120px;
+  margin-bottom: 1.2rem;
+}
+
+.product-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1976d2;
+  text-align: center;
+}
+
+.product-card p {
+  margin: 0 0 1.2rem 0;
+  color: #1976d2;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Button group */
+.product-actions {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Buy Now button */
+.buy-now {
+  background: linear-gradient(90deg, #1976d2, #26c6da);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.buy-now:hover {
+  background: linear-gradient(90deg, #1565c0, #00acc1);
+}
+
+/* Buy later button */
+.buy-later {
+  background: #fff;
+  color: #1976d2;
+  border: 1px solid #1976d2;
+  border-radius: 22px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.buy-later:hover {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #1976d2;
+  margin-top: 24px;
+  padding-bottom: 32px;
+  background: linear-gradient(to bottom, #e3f2fd 0%, #b3e5fc 100%);
+}
+
+.footer-link {
+  color: #1976d2;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer-note {
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .product-card {
+    width: 90vw;
+    max-width: 400px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 12px;
+  }
+}
