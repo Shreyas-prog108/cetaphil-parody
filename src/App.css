@@ -57,38 +57,6 @@ body {
   background: linear-gradient(90deg, #1565c0, #00acc1);
 }
 
-
-.navbar-links {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: #222;
-  font-size: 1.1rem;
-  padding: 4px 10px;
-  border-radius: 4px;
-  transition: background 0.2s;
-}
-
-.navbar-links .buy-now {
-  background: linear-gradient(90deg, #1976d2, #26c6da);
-  color: #fff;
-  border-radius: 20px;
-  padding: 6px 18px;
-  font-weight: bold;
-  transition: background 0.2s;
-  border: none;
-}
-
-.navbar-links .buy-now:hover {
-  background: linear-gradient(90deg, #1565c0, #00acc1);
-}
-
 /* Hero Section */
 .hero-section {
   background: linear-gradient(to bottom, #e3f2fd 0%, #b3e5fc 100%);
@@ -232,5 +200,46 @@ body {
     flex-direction: column;
     gap: 12px;
     padding: 18px 12px;
+  }
+}
+
+/* Mobile menu toggle styles */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+.navbar-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    z-index: 100;
+  }
+  .navbar-links.open {
+    display: flex;
+  }
+  .navbar-toggle {
+    display: flex;
   }
 }
